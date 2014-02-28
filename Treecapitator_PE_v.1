@@ -1,0 +1,118 @@
+/*
+Treecapitator by Lerixe
+v.1.0
+Description:
+EN: Chop the lowest wood log of a tree to chop all.
+DE: Zerstöre denn untersten Block von einem Baum um den ganzen Baum zu fällen.
+*/
+
+function destroyBlock(x, y, z, side)
+{
+for (var a = 1; a<128; a++)
+
+if(getTile(x,y + a,z)== 17 && getTile(x,y+4,z+1)==18
+&&Level.getData(x,y + a,z)==0
+&&getCarriedItem()==258)
+{
+setTile(x,y + a,z,0);
+	Level.dropItem(x,y,z,0,17,1,0);
+}
+else if(getTile(x,y + a,z)== 17 && getTile(x,y+4,z+1)==18
+&&Level.getData(x,y + a,z)==1
+&&getCarriedItem()==258)
+{
+setTile(x,y + a,z,0);
+	Level.dropItem(x,y,z,0,17,1,1);
+}
+else if(getTile(x,y + a,z)== 17 && getTile(x,y+4,z+1)==18
+&&Level.getData(x,y + a,z)==2
+&&getCarriedItem()==258)
+{
+setTile(x,y + a,z,0);
+	Level.dropItem(x,y,z,0,17,1,2);
+}
+else if(getTile(x,y + a,z)== 17 && getTile(x,y+4,z+1)==18
+&&Level.getData(x,y + a,z)==0
+&&getCarriedItem()==271)
+{
+setTile(x,y + a,z,0);
+	Level.dropItem(x,y,z,0,17,1,0);
+}
+else if(getTile(x,y + a,z)== 17 && getTile(x,y+4,z+1)==18
+&&Level.getData(x,y + a,z)==1
+&&getCarriedItem()==271)
+{
+setTile(x,y + a,z,0);
+	Level.dropItem(x,y,z,0,17,1,1);
+}
+else if(getTile(x,y + a,z)== 17 && getTile(x,y+4,z+1)==18
+&&Level.getData(x,y + a,z)==2
+&&getCarriedItem()==271)
+{
+setTile(x,y + a,z,0);
+	Level.dropItem(x,y,z,0,17,1,2);
+}
+else if(getTile(x,y + a,z)== 17 && getTile(x,y+4,z+1)==18
+&&Level.getData(x,y + a,z)==0
+&&getCarriedItem()==275)
+{
+setTile(x,y + a,z,0);
+	Level.dropItem(x,y,z,0,17,1,0);
+}
+else if(getTile(x,y + a,z)== 17 && getTile(x,y+4,z+1)==18
+&&Level.getData(x,y + a,z)==1
+&&getCarriedItem()==275)
+{
+setTile(x,y + a,z,0);
+	Level.dropItem(x,y,z,0,17,1,1);
+}
+else if(getTile(x,y + a,z)== 17 && getTile(x,y+4,z+1)==18
+&&Level.getData(x,y + a,z)==2
+&&getCarriedItem()==275)
+{
+setTile(x,y + a,z,0);
+	Level.dropItem(x,y,z,0,17,1,2);
+}
+else if(getTile(x,y + a,z)== 17 && getTile(x,y+4,z+1)==18
+&&Level.getData(x,y + a,z)==0
+&&getCarriedItem()==279)
+{
+setTile(x,y + a,z,0);
+	Level.dropItem(x,y,z,0,17,1,0);
+}
+else if(getTile(x,y + a,z)== 17 && getTile(x,y+4,z+1)==18
+&&Level.getData(x,y + a,z)==1
+&&getCarriedItem()==279)
+{
+setTile(x,y + a,z,0);
+	Level.dropItem(x,y,z,0,17,1,1);
+}
+else if(getTile(x,y + a,z)== 17 && getTile(x,y+4,z+1)==18
+&&Level.getData(x,y + a,z)==2
+&&getCarriedItem()==279)
+{
+setTile(x,y + a,z,0);
+	Level.dropItem(x,y,z,0,17,1,2);
+}
+else if(getTile(x,y + a,z)== 17 && getTile(x,y+4,z+1)==18
+&&Level.getData(x,y + a,z)==0
+&&getCarriedItem()==286)
+{
+setTile(x,y + a,z,0);
+	Level.dropItem(x,y,z,0,17,1,0);
+}
+else if(getTile(x,y + a,z)== 17 && getTile(x,y+4,z+1)==18
+&&Level.getData(x,y + a,z)==1
+&&getCarriedItem()==286)
+{
+setTile(x,y + a,z,0);
+	Level.dropItem(x,y,z,0,17,1,1);
+}
+else if(getTile(x,y + a,z)== 17 && getTile(x,y+4,z+1)==18
+&&Level.getData(x,y + a,z)==2
+&&getCarriedItem()==286)
+{
+setTile(x,y + a,z,0);
+	Level.dropItem(x,y,z,0,17,1,2);
+}
+}
